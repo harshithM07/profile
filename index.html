@@ -82,7 +82,7 @@ nav.scrolled{background:rgba(7,7,9,.92);backdrop-filter:blur(16px);border-bottom
 
 /* COUNTERS */
 .counter-section{background:var(--d3);padding:72px 64px}
-.counters-grid{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.04)}
+.counters-grid{max-width:640px;margin:0 auto;display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,.04)}
 .counter-item{background:var(--d3);padding:44px 40px;text-align:center;transition:background .4s}
 .counter-item:hover{background:var(--d4)}
 .counter-num{font-family:'Playfair Display',serif;font-size:52px;font-weight:700;color:var(--gold);line-height:1;margin-bottom:8px}
@@ -216,7 +216,7 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:26px 64px;display:flex
   .skills-grid,.city-grid,.interests-grid{grid-template-columns:1fr}
   .edu-card{grid-template-columns:1fr}
   .counters-grid{grid-template-columns:1fr 1fr}
-  .counter-section{padding:48px 24px}
+  .counter-section{padding:48px 24px;text-align:center}
   .contact-inner{padding:80px 24px}
   footer{padding:20px 24px;flex-direction:column;gap:10px;text-align:center}
   .city-wrap{height:300px}
@@ -243,7 +243,7 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:26px 64px;display:flex
 <!-- HERO -->
 <section class="hero" id="about">
   <div class="hero-bg-img">
-    <img src="https://images.unsplash.com/photo-1531218150217-54595bc2b934?w=1600&q=80" alt="Dallas skyline"/>
+    <img src="https://images.unsplash.com/photo-1545194445-dddb8f4487c6?w=1600&q=80" alt="Dallas skyline"/>
   </div>
   <div class="hero-overlay"></div>
   <canvas class="hero-particles" id="particles"></canvas>
@@ -255,7 +255,7 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:26px 64px;display:flex
       </div>
       <h1 class="hero-name">Harshith<br/><span>Meela</span></h1>
       <p class="hero-role">Quantitative Strategist &amp; Technology Leader</p>
-      <p class="hero-desc">A decade of elite work at the intersection of high finance and advanced technology. Building quantitative systems and leading world-class teams at one of Wall Street's most storied institutions, from Bengaluru to Dallas.</p>
+      <p class="hero-desc">A decade of elite work at the intersection of high finance and advanced technology. I build quantitative systems and lead world-class teams at one of Wall Street's most storied institutions, from Bengaluru to Dallas.</p>
       <div class="hero-cta">
         <a href="https://www.linkedin.com/in/harshithmeela" target="_blank" rel="noopener noreferrer" class="btn-gold">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
@@ -272,8 +272,8 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:26px 64px;display:flex
       <div class="mini-stats">
         <div class="mini-stat reveal-r" style="transition-delay:.1s"><div class="mini-num">VP</div><div class="mini-label">Current Level</div></div>
         <div class="mini-stat reveal-r" style="transition-delay:.2s"><div class="mini-num">3</div><div class="mini-label">Languages</div></div>
-        <div class="mini-stat reveal-r" style="transition-delay:.3s"><div class="mini-num">2</div><div class="mini-label">Countries</div></div>
-        <div class="mini-stat reveal-r" style="transition-delay:.4s"><div class="mini-num">4</div><div class="mini-label">Promotions</div></div>
+        <div class="mini-stat reveal-r" style="transition-delay:.3s"><div class="mini-num">AWM</div><div class="mini-label">Division</div></div>
+        <div class="mini-stat reveal-r" style="transition-delay:.4s"><div class="mini-num">Strats</div><div class="mini-label">Group</div></div>
       </div>
     </div>
   </div>
@@ -282,44 +282,6 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:26px 64px;display:flex
     <div class="scroll-bar"></div>
   </div>
 </section>
-
-<!-- LOGOS MARQUEE -->
-<div class="logos-strip">
-  <div class="logos-inner" id="marquee">
-    <div class="logo-item"><span class="logo-badge gs-logo">Goldman Sachs</span></div>
-    <div class="logo-sep"></div>
-    <div class="logo-item"><span class="logo-badge ms-logo">Microsoft</span></div>
-    <div class="logo-sep"></div>
-    <div class="logo-item"><span class="logo-badge iiit-logo">IIIT Hyderabad</span></div>
-    <div class="logo-sep"></div>
-    <div class="logo-item"><span class="logo-badge loc-logo">📍 Dallas, TX</span></div>
-    <div class="logo-sep"></div>
-    <div class="logo-item"><span class="logo-badge loc-logo">📍 Bengaluru</span></div>
-    <div class="logo-sep"></div>
-    <!-- duplicate for seamless loop -->
-    <div class="logo-item"><span class="logo-badge gs-logo">Goldman Sachs</span></div>
-    <div class="logo-sep"></div>
-    <div class="logo-item"><span class="logo-badge ms-logo">Microsoft</span></div>
-    <div class="logo-sep"></div>
-    <div class="logo-item"><span class="logo-badge iiit-logo">IIIT Hyderabad</span></div>
-    <div class="logo-sep"></div>
-    <div class="logo-item"><span class="logo-badge loc-logo">📍 Dallas, TX</span></div>
-    <div class="logo-sep"></div>
-    <div class="logo-item"><span class="logo-badge loc-logo">📍 Bengaluru</span></div>
-  </div>
-</div>
-
-<!-- COUNTERS -->
-<div class="counter-section">
-  <div class="counters-grid">
-    <div class="counter-item reveal"><div class="counter-num" data-target="10">0</div><div class="counter-label">Years at Goldman Sachs</div></div>
-    <div class="counter-item reveal" style="transition-delay:.1s"><div class="counter-num" data-target="5">0</div><div class="counter-label">Years to Reach VP</div></div>
-    <div class="counter-item reveal" style="transition-delay:.2s"><div class="counter-num" data-target="4">0</div><div class="counter-label">Career Promotions</div></div>
-    <div class="counter-item reveal" style="transition-delay:.3s"><div class="counter-num" data-target="3">0</div><div class="counter-label">Languages Spoken</div></div>
-  </div>
-</div>
-
-<div class="divider"></div>
 
 <!-- EXPERIENCE -->
 <div class="exp-bg" id="experience">
@@ -427,32 +389,6 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:26px 64px;display:flex
 
 <div class="divider"></div>
 
-<!-- CITIES -->
-<div class="city-grid">
-  <div class="city-wrap">
-    <img src="https://images.unsplash.com/photo-1605281317010-fe5ffe798166?w=900&q=80" alt="Dallas Texas" loading="lazy"/>
-    <div class="city-ov">
-      <div>
-        <div class="city-tag">Current Base</div>
-        <div class="city-title">Dallas,<br/>Texas</div>
-        <div class="city-desc">Goldman Sachs' major US hub outside New York. Harshith leads quantitative strategy from the heart of one of America's fastest-growing financial centers.</div>
-      </div>
-    </div>
-  </div>
-  <div class="city-wrap">
-    <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=900&q=80" alt="Bengaluru India" loading="lazy"/>
-    <div class="city-ov">
-      <div>
-        <div class="city-tag">Previous Base · 7 Years</div>
-        <div class="city-title">Bengaluru,<br/>India</div>
-        <div class="city-desc">India's Silicon Valley and Goldman's largest global tech hub. Where Harshith rose from Analyst to Vice President, building world-class financial systems over 7 years.</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="divider"></div>
-
 <!-- SKILLS -->
 <section class="section" id="skills">
   <div class="s-header reveal">
@@ -502,34 +438,6 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:26px 64px;display:flex
 </section>
 
 <div class="divider"></div>
-
-<!-- INTERESTS -->
-<!-- <section class="section" style="padding-bottom:60px">
-  <div class="s-header reveal">
-    <div class="s-tag"><div class="s-tag-line"></div><div class="s-tag-text">04 - Beyond Work</div></div>
-    <h2 class="s-title">A Few <em>Passions</em></h2>
-  </div>
-  <div class="interests-grid">
-    <div class="int-card reveal">
-      <div class="int-glow"></div>
-      <span class="int-emoji">♟️</span>
-      <div class="int-name">Chess</div>
-      <div class="int-desc">A game of strategy, patience, and deep anticipation. The same qualities that make a great quant make a great chess player.</div>
-    </div>
-    <div class="int-card reveal" style="transition-delay:.1s">
-      <div class="int-glow"></div>
-      <span class="int-emoji">🍛</span>
-      <div class="int-name">South Indian Cuisine</div>
-      <div class="int-desc">From crispy dosas to rich sambar and hearty rasam, a deep love for the bold, aromatic flavors of South Indian cooking.</div>
-    </div>
-    <div class="int-card reveal" style="transition-delay:.2s">
-      <div class="int-glow"></div>
-      <span class="int-emoji">🍚</span>
-      <div class="int-name">Biryani</div>
-      <div class="int-desc">The undisputed king of rice dishes. Whether Hyderabadi dum biryani or any regional variation, this is a lifelong affair.</div>
-    </div>
-  </div>
-</section> -->
 
 <!-- CONTACT -->
 <div class="contact-section" id="contact">
